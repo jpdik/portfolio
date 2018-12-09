@@ -59,7 +59,7 @@ a, a:visited {
 	transition: all 0.3s ease-in-out;
 }
 a:hover, a:focus, a:active {
-	color: #3e2cea;
+	color: #3c9cf8;
 	outline: 0;
 }
 
@@ -126,7 +126,7 @@ p.lead {
 	font-size: 2rem;
 	line-height: 1.8;
 	color: #888888;
-	padding-top: 0.6em;
+	padding-top: 2.6em;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -271,7 +271,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #3e2cea;
+	background: #3c9cf8;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -279,7 +279,7 @@ ul.disc li::before {
 }
 dt {
 	margin: 0;
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 dd {
 	margin: 0 0 0 2rem;
@@ -399,7 +399,7 @@ img.pull-left {
 	display: none;
 }
 .pace .pace-progress {
-	background: #3e2cea;
+	background: #3c9cf8;
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -442,7 +442,7 @@ img.pull-left {
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #3e2cea;
+	border-left: 11px solid #3c9cf8;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -564,8 +564,8 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 textarea:focus,
 select:focus {
-	color: #3e2cea;
-	border-bottom: 1px solid #3e2cea;
+	color: #3c9cf8;
+	border-bottom: 1px solid #3c9cf8;
 }
 label, legend {
 	font-family: "poppins-bold", sans-serif;
@@ -706,8 +706,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid #3e2cea;
-	color: #3e2cea;
+	border: 3px solid #3c9cf8;
+	color: #3c9cf8;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -895,7 +895,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	color: #252525;
 }
 .stats-tabs li a:hover {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 .stats-tabs li a em {
 	display: block;
@@ -903,6 +903,21 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	font-size: 1.4rem;
 	font-family: "poppins-regular", sans-serif;
 	color: #888888;
+}
+
+.gold {
+	background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+	radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+}
+
+.silver {
+	background: radial-gradient(ellipse farthest-corner at right bottom, #eaeaea 0%, #ffffff 8%, #8f9ba4 30%, #8d9aa4 40%, transparent 80%),
+	radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffff 8%, #c6d0d6 25%, #686a6f 62.5%, #7a766f 100%) !important;
+}
+
+.bronze {
+	background: radial-gradient(ellipse farthest-corner at right bottom, #dedede 0%, #ffffff 8%, #bd7937 30%, #bf6d20 40%, transparent 80%),
+	radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffff 8%, #d8873a 25%, #e5862c 62.5%, #ffffff 100%) !important;
 }
 
 /**
@@ -915,7 +930,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 .skill-bars li {
 	height: .6rem;
-	background: #a1a1a1;
 	width: 100%;
 	margin-bottom: 6rem;
 	padding: 0;
@@ -935,7 +949,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .skill-bars li .progress {
 	background: #313131;
 	position: relative;
-	height: 100%;
+	height: 2em;
+    font-size: 10px;
+    font-weight: bold;
 }
 .skill-bars li .progress span {
 	position: absolute;
@@ -1010,12 +1026,16 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 1.25;
 	margin-bottom: 1.2rem;
 }
-.section-intro h5 {
-	color: #3e2cea;
+.topic-title h5{
+	color: #3c9cf8;
 	font-size: 1.6rem;
 	line-height: 1.875;
 	margin-bottom: 0.3rem;
 	letter-spacing: .4rem;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
 }
 
 /**
@@ -1090,8 +1110,8 @@ header .top-bar {
 	position: relative;
 }
 .language-toggle span {
-	background-color: #3e2cea;
-	color: #3e2cea;
+	background-color: #3c9cf8;
+	color: #3c9cf8;
 	width: 2em;
 	font-size:24px;
 	height: 0px;
@@ -1124,7 +1144,7 @@ header .top-bar {
 }
 .menu-toggle span {
 	display: block;
-	background-color: #3e2cea;
+	background-color: #3c9cf8;
 	width: 24px;
 	height: 3px;
 	margin-top: -1.5px;
@@ -1182,7 +1202,7 @@ header .top-bar {
 	background-color: rgba(255, 0, 119, 0);
 }
 .menu-toggle.is-clicked span::before, .menu-toggle.is-clicked span::after {
-	background-color: #3e2cea;
+	background-color: #3c9cf8;
 	-moz-transition-delay: 0s, 0.2s;
 	-o-transition-delay: 0s, 0.2s;
 	-webkit-transition-delay: 0s, 0.2s;
@@ -1238,12 +1258,12 @@ header .top-bar {
 	border: none;
 }
 .main-navigation li a:hover {
-	color: #3e2cea;
+	color: #3c9cf8;
 	padding-left: 1rem;
 }
 .main-navigation li.current > a {
 	background: none;
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 
 .language-navigation {
@@ -1270,12 +1290,12 @@ header .top-bar {
 	border: none;
 }
 .language-navigation li a:hover {
-	color: #3e2cea;
+	color: #3c9cf8;
 	padding-left: 1rem;
 }
 .language-navigation li.current > a {
 	background: none;
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 
 .center{
@@ -1361,7 +1381,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #3e2cea;
+	color: #3c9cf8;
 	font-family: "poppins-bold", sans-serif;
 	font-size: 2.3rem;
 	line-height: 1.565;
@@ -1408,7 +1428,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #3e2cea;
+	border-color: #3c9cf8;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1440,7 +1460,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 
 /**
@@ -1545,10 +1565,24 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	float: left;
 	margin-right: 30px;
 }
-.intro-info .lead {
-	text-align: left;
-	padding-left: 15rem;
+.lead {
+	text-align: justify !important;
 	color: black;
+}
+
+.vertical-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.img-rounded{
+	border-radius: 100%;
+}
+
+.topic-title{
+	margin-bottom: 5rem;
 }
 
 .about-content {
@@ -1669,7 +1703,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	text-align: center;
 }
 #resume .resume-header h2 {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 
 #resume .resume-timeline {
@@ -1691,11 +1725,23 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	top: 0;
 }
 
+#Work .timeline-award {
+	position: relative;
+	padding-top: 1.5rem;
+	height: 19em;
+}
+
 @media only screen and (min-width: 768px){
 	#Work .timeline-block {
 		position: relative;
 		padding-top: 1.5rem;
 		height: 10em;
+	}
+
+	#Work .timeline-award {
+		position: relative;
+		padding-top: 1.5rem;
+		height: 19em;
 	}
 }
 
@@ -1710,7 +1756,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: #FFFFFF;
 	position: absolute;
 	left: 35%;
-	top: .9rem;
+	top: 1rem;
 	margin-left: -2.4rem;
 }
 
@@ -1913,7 +1959,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	border-right: 1px solid rgba(200, 200, 200, 0.1);
 }
 .popup-modal .link-box a:hover {
-	background: #3e2cea;
+	background: #3c9cf8;
 	border: none;
 }
 @media only screen and (max-width:600px) {
@@ -2060,7 +2106,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: white;
 }
 #services .section-intro h5 {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 #services .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2082,7 +2128,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 }
 .services-list .icon i {
 	font-size: 5.4rem;
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 .services-list h3 {
 	color: #FFFFFF;
@@ -2110,7 +2156,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	background: #FFFFFF;
 }
 .owl-theme .owl-controls .owl-page.active span {
-	background: #3e2cea;
+	background: #3c9cf8;
 }
 
 
@@ -2196,7 +2242,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: white;
 }
 #contact .section-intro h5 {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 #contact .section-intro p {
 	color: rgba(255, 255, 255, 0.7);
@@ -2249,7 +2295,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	padding: 0 2rem;
 	margin: 0;
 	color: #FFFFFF;
-	background: #3e2cea;
+	background: #3c9cf8;
 }
 #contact form .form-field label::after {
 	position: absolute;
@@ -2258,7 +2304,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	margin-top: -6px;
 	border-top: 5px solid transparent;
 	border-bottom: 5px solid transparent;
-	border-right: 5px solid #3e2cea;
+	border-right: 5px solid #3c9cf8;
 	content: "";
 }
 #contact input[type="text"],
@@ -2280,7 +2326,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 #contact input[type="text"]:focus,
 #contact input[type="password"]:focus,
 #contact input[type="email"]:focus {
-	border-color: #3e2cea;
+	border-color: #3c9cf8;
 	color: #FFFFFF;
 }
 #contact textarea {
@@ -2288,7 +2334,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	padding: 1.8rem 2rem;
 }
 #contact textarea:focus {
-	border-color: #3e2cea;
+	border-color: #3c9cf8;
 	color: #FFFFFF;
 }
 #contact button.submitform {
@@ -2300,11 +2346,11 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: #3e2cea;
+	background: #3c9cf8;
 	color: #FFFFFF;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: #3e2cea;
+	background: #3c9cf8;
 }
 #message-warning, #message-success {
 	display: none;
@@ -2318,7 +2364,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: #fa0003;
 }
 #message-success {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 #message-warning i, #message-success i {
 	margin-right: 10px;
@@ -2363,7 +2409,7 @@ background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
 	color: #FFFFFF;
 }
 .contact-info h5 {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 
 
@@ -2438,7 +2484,7 @@ footer a, footer a:visited {
 	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #3e2cea;
+	color: #3c9cf8;
 }
 footer .row {
 	max-width: 900px;
@@ -2517,7 +2563,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: #3e2cea;
+	background: #3c9cf8;
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
