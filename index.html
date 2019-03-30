@@ -109,34 +109,70 @@
 		
 		<div class="row about-content">
 			
-			<div class="col-six tab-full">
+			<div class="col-twelve tab-full">
 				
 				<h3>{{ language['text-info'] }}</h3>
 				
+				<div class="col-six tab-full">
+					<ul class="info-list">
+						<div ng-repeat="info in language.info">
+							<li ng-if="$index%2 == 0">
+								<strong>{{ info[0] }}:</strong>
+								<span>{{ info[1] }}</span>
+							</li>
+						</div>
+					</ul> <!-- /info-list -->
+				</div>
 				
-				<ul class="info-list">
-					<li ng-repeat="info in language.info">
-						<strong>{{ info[0] }}</strong>
-						<span>{{ info[1] }}</span>
-					</li>
-					
-					
-				</ul> <!-- /info-list -->
+				<div class="col-six tab-full">
+					<ul class="info-list">
+						<div ng-repeat="info in language.info">
+							<li ng-if="$index%2 != 0">
+								<strong>{{ info[0] }}:</strong>
+								<span>{{ info[1] }}</span>
+							</li>
+						</div>
+					</ul> <!-- /info-list -->
+				</div>
 				
 			</div>
 			
-			<div class="col-six tab-full">
+		</div>
+		<div class="row about-content">
+			
+			<div class="col-twelve tab-full">
 				
 				<h3>{{ language['text-skills'] }}</h3>
 				
-				<ul class="skill-bars">
-					<li ng-repeat="skill in language.skills">
-						<div class="progress">
-							<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="{{ skill[1] }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill[1] }}%">{{ skill[1] }}%</div>
+				<div class="col-six tab-full">
+					
+					<ul class="skill-bars">
+						<div ng-repeat="skill in language.skills">
+							<li ng-if="$index%2 == 0">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="{{ skill[1] }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill[1] }}%">{{ skill[1] }}%</div>
+								</div>
+								<strong>{{ skill[0] }}</strong>
+							</li>
 						</div>
-						<strong>{{ skill[0] }}</strong>
-					</li>
-				</ul> <!-- /skill-bars -->
+					</ul> <!-- /skill-bars -->
+					
+				</div>
+				
+				<div class="col-six tab-full">
+					
+					<ul class="skill-bars">
+						<div ng-repeat="skill in language.skills">
+							<li ng-if="$index%2 != 0">
+								<div class="progress">
+									<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="{{ skill[1] }}" aria-valuemin="0" aria-valuemax="100" style="width: {{ skill[1] }}%">{{ skill[1] }}%</div>
+								</div>
+								<strong>{{ skill[0] }}</strong>
+							</li>
+						</div>
+					</ul> <!-- /skill-bars -->
+					
+				</div>
 				
 			</div>
 			

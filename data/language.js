@@ -6,20 +6,27 @@ var language = {
         
         "principal-functions": ["Desenvolvedor FULL-STACK"],
         "text-about": "Sobre",
-        "info-about": "Tenho contribuído para minha instituição constantemente com diversos projetos e pesquisas e também auxilio os alunos dentro da instituição. Fui monitor de atividades complementares no mais recente laboratório de robótica e inovação tecnológica elaborando protótipos que utilizam Arduino e Lego. Já desenvolvo aplicativos, sistemas e serviços para diversas pessoas sendo autônomo e tenho amplo conhecimento em diferentes tecnologias Web. Atualmente, estou aprendendo Machine Learning com o objetivo de me tornar um cientista de dados.",
+        "info-about": "Tenho contribuído para minha instituição constantemente com diversos projetos e pesquisas\
+         e também auxilio os alunos dentro da instituição. Fui monitor de atividades complementares no mais recente\
+         laboratório de robótica e inovação tecnológica elaborando protótipos que utilizam Arduino e Lego. Já desenvolvo\
+         aplicativos, sistemas e serviços para diversas pessoas sendo autônomo e tenho amplo conhecimento em diferentes\
+         tecnologias Web. Atualmente, aprendendo sobre Machine Learning.",
         
         "text-info": "Informações",
         "info":[
             ["Nome", "João Paulo de Melo"],
             ["Data de Nascimento", "11/09/1995"],
-            ["E-mail", "jpmdik@gmail.com"]
+            ["E-mail", "jpmdik@gmail.com"],
+            ["Cidade, Estado", "Barbacena, MG"]
         ],
         
         "text-skills": "Principais Habilidades",
         "skills": [
             ["Web", 90],
+            ["JavaScript", 50],
             ["Python", 80],
-            ["Ruby on Rails", 80],
+            ["React", 30],
+            ["Ruby on Rails", 75],
             ["Machine Learning", 60],
             ["Mobile", 60]
         ],
@@ -38,12 +45,11 @@ var language = {
         "label-languages": "Línguas",
         "languages":[
             ["Português", 100],
-            ["Inglês", 50]
+            ["Inglês", 65]
         ],
         
         "label-personality": "Personalidade",
         "personality": [      
-            "Sério",
             "Dinâmico",
             "Organizado",
             "Trabalho em equipe"
@@ -52,7 +58,6 @@ var language = {
         "label-about": "Interesses",
         "about": [
             "Música",
-            "Jogos",
             "Filmes",
             "Notícias"   
         ],
@@ -128,8 +133,8 @@ var language = {
         ],
         "text-qualifications": "Certificados e Diplomas",
         "qualifications": [
-            ["Graduação em andamento em Sistemas Para Internet.",
-            "(2015 - Data presente)",
+            ["Tecnólogo em Sistemas Para Internet.",
+            "(2015/1 - 2019/1)",
             "Instituto Federal do Sudeste de Minas Gerais Campus Barbacena, IF SUDESTE MG, Brasil."],
             
             ["Técnico em Mecânica Industrial.",
@@ -165,24 +170,27 @@ var language = {
         
         "principal-functions": ["FULL-STACK DEVELOPER"],
         "text-about": "About",
-        "info-about": "I have contributed to my institution constantly with various projects and researches and also\
-         help the students inside the institution. I was monitor of complementary activities in the latest \
-         laboratory of robotics and technological innovation elaborating prototypes that use Arduino and Lego. \
-         I already develop applications, systems and services for several people, being autonomous and have ample \
-         knowledge in different Web technologies. Currently, I am learning Machine Learning in order to become a data scientist.",
+        "info-about": "I have contributed to my institution constantly with various projects and research \
+        and also help students within the institution. I was monitor of complementary activities in the latest \
+        laboratory of robotics and technological innovation elaborating prototypes that use Arduino and Lego. I already develop \
+        applications, systems and services for several people being autonomous and have extensive knowledge in different \
+        Web technologies. Currently learning about Machine Learning.",
         
         "text-info": "Info",
         "info":[
             ["Name", "João Paulo de Melo"],
             ["Birthdate", "11/09/1995"],
-            ["Email", "jpmdik@gmail.com"]
+            ["Email", "jpmdik@gmail.com"],
+            ["City, State", "Barbacena, MG"]
         ],
         
         "text-skills": "Main Skills",
         "skills": [
             ["Web", 90],
+            ["JavaScript", 50],
             ["Python", 80],
-            ["Ruby on Rails", 80],
+            ["React", 30],
+            ["Ruby on Rails", 75],
             ["Machine Learning", 60],
             ["Mobile", 60]
         ],
@@ -200,12 +208,11 @@ var language = {
         "label-languages": "Languages",
         "languages":[
             ["Portuguese", 100],
-            ["English", 50]
+            ["English", 65]
         ],
         
         "label-personality": "Personality",
         "personality": [
-            "serious", 
             "dynamic",
             "organized",
             "team work"
@@ -214,7 +221,6 @@ var language = {
         "label-about": "About Me",
         "about": [
             "Music",
-            "Games",
             "movies",
             "News"
             
@@ -291,8 +297,8 @@ var language = {
         ],
         "text-qualifications": "Training and Qualifications",
         "qualifications": [
-            ["Graduation in progress in Internet Systems.",
-            "(2015 - Actual Date)",
+            ["Technologist in Internet Systems.",
+            "(2015/1 - 2019/1)",
             "Federal Institute of the Southeast of Minas Gerais, IF SUDESTE MG, Brasil."],
             
             ["Industrial Mechanical Technician.",
