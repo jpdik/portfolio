@@ -1,0 +1,69 @@
+.topic-container {
+    margin-bottom: 4em;
+}
+
+.lead {
+    text-align: justify;
+}
+
+.infoCard {
+    padding: 2em 0;
+}
+
+.about-content strong {
+    font-family: "poppins-bold", sans-serif;
+    color: #313131;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-size: 1.2rem;
+}
+
+.about-content span {
+    display: block;
+    font-family: "poppins-regular", sans-serif;
+    color: #888888;
+    font-size: 1.2rem;
+}
+
+.progress {
+    background: #313131 !important;
+    position: relative;
+    height: 2em !important;
+    font-weight: bold;
+}
+
+.infoCard strong {
+    font-size: 1em;
+}
+
+.button-section {
+    margin-top: 4em;
+    margin-bottom: 8em;
+}
+
+.button-section .button {
+    width: 250px;
+    font-family: "poppins-bold", sans-serif;
+    border: 3px solid #313131;
+}
+
+.button.stroke {
+    background: transparent !important;
+    color: #313131;
+}
+
+button.stroke:hover,
+.button.stroke:hover {
+    border: 3px solid #3c9cf8;
+    color: #3c9cf8;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-primary {
+    background: #313131 !important;
+    color: #FFFFFF !important;
+}
+
+.button-primary:hover {
+    background: #1f1f1f !important;
+}
