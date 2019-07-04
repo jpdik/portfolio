@@ -68,7 +68,7 @@
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
         "test": "node scripts/test.js",
-        "deploy": "gh-pages -d build"
+        "deploy": "cp -r build/* ../jpdik.github.io/"
     },
     "eslintConfig": {
         "extends": "react-app"
@@ -138,5 +138,5 @@
     "devDependencies": {
         "gh-pages": "^2.0.1"
     },
-    "homepage": "http://jpdik.github.io/react-gh-pages"
+    "homepage": "http://jpdik.github.io/"
 }
