@@ -1,9 +1,9 @@
 import React from 'react';
 
-import './css/award.css'
+import './css/histogram.css'
 
 export default props => (
-    <div class="timeline-wrap">
+    <div className="timeline-wrap">
         {props.children}
     </div>
 )

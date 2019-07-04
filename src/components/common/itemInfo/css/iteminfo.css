@@ -1,0 +1,13 @@
+.service {
+    width: 400px;
+    height: 400px;
+}
+
+.itemInfo-title {
+    margin: 1em 0;
+}
+
+.icon {
+    margin-top: 3em;
+    color: #3c9cf8;
+}

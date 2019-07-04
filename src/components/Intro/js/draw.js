@@ -91,13 +91,6 @@ export function updateCanvas(canvas) {
         }
     };
 
-    var renderPoints = function() {
-        var i = points.length;
-        while (i--) {
-            points[i].render();
-        }
-    };
-
     var renderShape = function() {
         ctx.beginPath();
         var pointCount = points.length;

@@ -3,18 +3,24 @@ import { Container, Row, Col } from 'react-bootstrap'
 
 import './css/about.css'
 import Avatar from '../common/avatar/Avatar';
-import avatar from '../../img/avatar.jpg'
+import avatar from '../../img/avatar.jpg';
+
+const reqSvgs = require.context('../../img/languages', true, /\.png$/)
+
+const imageList = reqSvgs.keys().reduce((images, path) => {
+	images[path.substring(2)] = reqSvgs(path)
+	return images
+},
+	{}
+)
 
 class About extends Component {
-	constructor(props) {
-		super(props);
-	}
 
 	renderInfo() {
 		let infoList = this.props.language.data.infoData || [];
 		return Object.keys(infoList).map(key => {
 			return (
-				<Col className="infoCard" lg="6" key={key}>
+				<Col key={key} className="infoCard" lg="6">
 					<strong>{key}:</strong>
 					<span>{infoList[key]}</span>
 				</Col>
@@ -24,13 +30,15 @@ class About extends Component {
 
 	renderBars() {
 		let skillList = this.props.language.general.skillsData || [];
-		return Object.keys(skillList).map(key => {
+		return skillList.map((skill, index) => {
 			return (
-				<Col className="infoCard" lg="6" key={key}>
-					<div class="progress">
-						<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={skillList[key]} aria-valuemin="0" aria-valuemax="100" style={{ width: skillList[key] + '%' }}>{skillList[key]}%</div>
+				<Col key={index} className="infoCard" lg="6">
+					
+					<img className="language-logo" src={imageList[skill.imageSource]} alt="logo" />
+					<strong>{skill.name}</strong>
+					<div className="progress">
+						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={skill.value} aria-valuemin="0" aria-valuemax="100" style={{ width: skill.value + '%' }}>{skill.value}%</div>
 					</div>
-					<strong>{key}</strong>
 				</Col>
 			)
 		});
@@ -40,7 +48,7 @@ class About extends Component {
 		let { aboutData, aboutTitle, infoTitle, skillsTitle } = this.props.language.data;
 
 		return (
-			<section className="start-section">
+			<section id={aboutTitle} className="start-section">
 				<Container>
 					<Row className="topic-container">
 						<Col lg="12 center">
@@ -52,13 +60,13 @@ class About extends Component {
 									<Avatar src={avatar} />
 								</Col>
 								<Col lg="8">
-									<p class="lead">{aboutData}</p>
+									<p className="lead">{aboutData}</p>
 								</Col>
 							</Row>
 						</Col>
 					</Row>
 
-					<Row class="about-content">
+					<Row className="about-content">
 
 						<Col lg="12 center">
 
@@ -90,7 +98,7 @@ class About extends Component {
 							<a href="#contact" title="Contato" className="button stroke smoothscroll">Contato</a>
 						</Col>
 						<Col lg="4 center">
-							<a href="https://www.linkedin.com/in/jp-dev/" target="_blank" title="Meu cv" className="button button-primary">Meu cv</a>
+							<a href="https://www.linkedin.com/in/jp-dev/" target="_blank" rel="noopener noreferrer" title="Meu cv" className="button button-primary">Meu cv</a>
 						</Col>
 					</Row>
 				</Container>

@@ -9,10 +9,6 @@ import './css/intro.css'
 import { updateCanvas } from './js/draw'
 
 class Intro extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     componentDidMount() {
         updateCanvas(this.refs.canvas);
     }
@@ -35,7 +31,7 @@ class Intro extends Component {
                                 <span>| {principalFunctions.join(', ')} |</span>
                             </p>
 
-                            <a className="button stroke smoothscroll" href="#about" title="">{aboutTitle}<FontAwesomeIcon className="icon-about" size="lg" icon={faSortDown}/></a>
+                            <a className="button stroke smoothscroll" href={'#'+aboutTitle} title="">{aboutTitle}<FontAwesomeIcon className="icon-about" size="lg" icon={faSortDown}/></a>
 
                         </Col>
 
