@@ -6,3 +6,11 @@
     padding-left: 6em;
     padding-right: 6em;
 }
+
+
+@media screen and (max-width: 680px) {
+    .service-content .infoCard {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+}

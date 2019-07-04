@@ -68,7 +68,7 @@
         "start": "node scripts/start.js",
         "build": "node scripts/build.js",
         "test": "node scripts/test.js",
-        "deploy": "cp -r build/* ../jpdik.github.io/"
+        "deploy": "cp -r build/* ../jpdik.github.io/ && cd ../jpdik.github.io/ && git add . && git commit -m 'Deploy' && git push origin master"
     },
     "eslintConfig": {
         "extends": "react-app"

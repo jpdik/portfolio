@@ -4,7 +4,7 @@ import { Navbar as Nav, NavDropdown } from 'react-bootstrap'
 import './css/navbar.css'
 import logo from '../../img/logo.png'
 
-import { faFlag } from '@fortawesome/free-solid-svg-icons'
+import { faLanguage, faBars } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Navbar extends Component {
@@ -13,7 +13,9 @@ class Navbar extends Component {
 
         return (
             <Nav fixed="top" className="navbar justify-content-between">
-                <NavDropdown className="menu-toggle" id="collasible-nav-dropdown">
+                <NavDropdown className="menu-toggle" id="collasible-nav-dropdown" title={
+                    <span><FontAwesomeIcon size="2x" icon={faBars} /></span>
+                }>
                     <NavDropdown.Item href={'#'+aboutTitle}>{aboutTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+skillsTitle}>{skillsTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+qualificationsTitle}>{qualificationsTitle}</NavDropdown.Item>
@@ -29,7 +31,7 @@ class Navbar extends Component {
                 </a>
 
                 <NavDropdown className="dropleft language-toggle" id="collasible-nav-dropdown" title={
-                    <span><FontAwesomeIcon size="2x" icon={faFlag} /></span>
+                    <span><FontAwesomeIcon size="2x" icon={faLanguage} /></span>
                 }>
                     <NavDropdown.Item onClick={() => this.props.actionLanguage('br')}>{portugueseText}</NavDropdown.Item>
                     <NavDropdown.Item onClick={() => this.props.actionLanguage('en')}>{englishText}</NavDropdown.Item>

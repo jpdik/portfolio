@@ -9,41 +9,7 @@
 }
 
 .menu-toggle {
-    padding-left: 0.5em;
     margin-left: 10px;
-}
-
-.menu-toggle {
-    display: block;
-    background-color: #3c9cf8;
-    width: 24px;
-    height: 3px;
-    font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
-    position: relative;
-}
-
-.menu-toggle::before {
-    top: -8px;
-}
-
-.menu-toggle::after {
-    top: 8px;
-}
-
-.menu-toggle:hover {
-    background: #0056b3;
-}
-
-.menu-toggle::before,
-.menu-toggle::after {
-    content: '';
-    width: 100%;
-    height: 100%;
-    background-color: inherit;
-    position: absolute;
-    left: 0;
 }
 
 .language-toggle {

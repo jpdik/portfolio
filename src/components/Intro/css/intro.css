@@ -5,7 +5,6 @@
     background-attachment: fixed;
     width: 100%;
     height: 100%;
-    min-height: 720px;
     display: table;
     text-align: center;
     background: #151515;
@@ -99,5 +98,9 @@ a.button {
         font-size: 54px;
         letter-spacing: -.1rem;
         font-weight: 500;
+    }
+
+    .intro-content .intro-position {
+        letter-spacing: 0;
     }
 }
