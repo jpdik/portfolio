@@ -9,19 +9,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 class Navbar extends Component {
     render() {
-        let { aboutTitle, qualificationsTitle, pExperienceTitle, awardsTitle, publicationsTitle, portugueseText, englishText } = this.props.language.data;
+        let { aboutTitle, skillsTitle, qualificationsTitle, pExperienceTitle, awardsTitle, publicationsTitle, moreInfoTitle, contactTitle, portugueseText, englishText } = this.props.language.data;
 
         return (
             <Nav fixed="top" className="navbar justify-content-between">
                 <NavDropdown className="menu-toggle" id="collasible-nav-dropdown">
                     <NavDropdown.Item href={'#'+aboutTitle}>{aboutTitle}</NavDropdown.Item>
+                    <NavDropdown.Item href={'#'+skillsTitle}>{skillsTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+qualificationsTitle}>{qualificationsTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+pExperienceTitle}>{pExperienceTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+awardsTitle}>{awardsTitle}</NavDropdown.Item>
                     <NavDropdown.Item href={'#'+publicationsTitle}>{publicationsTitle}</NavDropdown.Item>
+                    <NavDropdown.Item href={'#'+moreInfoTitle}>{moreInfoTitle}</NavDropdown.Item>
+                    <NavDropdown.Item href={'#'+contactTitle}>{contactTitle}</NavDropdown.Item>
                 </NavDropdown>
 
+                <a href="#intro">
                 <img src={logo} id="logo" alt="Logo" />
+                </a>
 
                 <NavDropdown className="dropleft language-toggle" id="collasible-nav-dropdown" title={
                     <span><FontAwesomeIcon size="2x" icon={faFlag} /></span>

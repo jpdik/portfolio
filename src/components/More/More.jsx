@@ -25,7 +25,8 @@ class More extends Component {
             return (
                 <Col key={key} className="infoCard" lg="12">
                     <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={itemList[key]} aria-valuemin="0" aria-valuemax="100" style={{ width: itemList[key] + '%' }}>{itemList[key]}%</div>
+                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={itemList[key]} aria-valuemin="0" aria-valuemax="100" style={{ width: itemList[key] + '%' }}/>
+                        <div className="progress-value">{itemList[key]}%</div>
                     </div>
                     <strong>{key}</strong>
                 </Col>

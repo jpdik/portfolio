@@ -90,3 +90,14 @@ a.button {
 .icon-about {
     margin-left: 15px;
 }
+
+@media screen and (max-width: 680px) {
+    .intro-content h5 {
+        font-size: 1.3rem;
+    }
+    .title {
+        font-size: 54px;
+        letter-spacing: -.1rem;
+        font-weight: 500;
+    }
+}

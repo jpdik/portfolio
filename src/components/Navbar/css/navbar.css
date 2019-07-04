@@ -10,6 +10,7 @@
 
 .menu-toggle {
     padding-left: 0.5em;
+    margin-left: 10px;
 }
 
 .menu-toggle {
@@ -31,6 +32,10 @@
     top: 8px;
 }
 
+.menu-toggle:hover {
+    background: #0056b3;
+}
+
 .menu-toggle::before,
 .menu-toggle::after {
     content: '';
@@ -39,6 +44,10 @@
     background-color: inherit;
     position: absolute;
     left: 0;
+}
+
+.language-toggle {
+    margin-right: 20px;
 }
 
 .nav-link {

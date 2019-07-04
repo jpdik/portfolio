@@ -1,3 +1,8 @@
 .services-content {
     margin-top: 2em;
 }
+
+.service-content .infoCard {
+    padding-left: 6em;
+    padding-right: 6em;
+}

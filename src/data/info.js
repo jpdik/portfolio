@@ -21,6 +21,8 @@ export const language = {
 
         skillsTitle: "Principais Habilidades",
 
+        projectsTitle: "Projetos e Currículo",
+
         moreInfoTitle: "Mais Informações",
 
         systemsTitle: "Sistemas e bancos de dados",
@@ -77,7 +79,7 @@ export const language = {
                 date: "10/2018",
                 company: "BRACIS",
                 theme: "Tema: Previsão da produção de óleo de palma",
-                description: "Solução campeã da competição de aprendizagem de máquina Kaggle KDD BR 2018: https://github.com/rafjaa/KDD-BR-2018/blob/master/solution.ipynb"
+                description: "O objetivo da competição era prever a produtividade da colheita de óleo de palma com os dados fornecidos pela AGROPALMA. O conjunto de dados cotinha informações sobre palmeiras, suas datas de colheita, dados atmosféricos durante o desenvolvimento das plantas e características do solo dos campos onde as árvores estão localizadas."
             },
             {
                 place: "silver",
@@ -101,7 +103,7 @@ export const language = {
                 date: "02/2017",
                 company: "John Deere - Brasil",
                 theme: "Tema: Conectando com o campo (Tema livre)",
-                description: "Desenvolvemos o JDConnect solução que conecta toda a empresa através de um middleware e fornece informações através de um chat amigável para o cliente. Através desse chat o usuário poderá conversar diretamente com suas máquinas (colheitadeiras/tratores) , que em nossa solução se transformaram em bots."
+                description: "Desenvolvemos o JDConnect solução que conecta toda a empresa através de um middleware e fornece informações através de um chat amigável para o cliente. Através desse chat o usuário poderá conversar diretamente com suas máquinas, que em nossa solução se transformaram em bots."
             },
             {
                 place: "gold",
@@ -174,6 +176,8 @@ export const language = {
 
         skillsTitle: "Main Skills",
 
+        projectsTitle: "Projects and Curriculum",
+
         moreInfoTitle: "More",
 
         systemsTitle: "Systems and databases",
@@ -220,7 +224,7 @@ export const language = {
             {
                 place: "bronze",
                 title: "3rd Place at Hackathon BNDES Transparente - Campus Party MG",
-                date: "(11/2018 - )",
+                date: "11/2018",
                 company: "BNDES",
                 theme: "Topic: Identify and respond fake news related to BNDES.",
                 description: "We created a system through the use of machine learning, which detected whether the news that was reported was Fake or not through a cross-data along with contextual analysis, in which weights were assigned, and the system gave us a verdict on the news. The system could also be learning over time, provided that this was done by those in charge of the system."
@@ -228,10 +232,10 @@ export const language = {
             {
                 place: "gold",
                 title: "1st place in the national artificial intelligence competition Brazilian Knowledge Discovery in Databases 2018, promoted by the 7th Brazilian Conference on Intelligent Systems (BRACIS).",
-                date: "(10/2018 - )",
+                date: "10/2018",
                 company: "BRACIS",
                 theme: "Topic: Predicting palm oil production",
-                description: "Kaggle KDD BR 2018 machine learning competition champion solution: https://github.com/rafjaa/KDD-BR-2018/blob/master/solution.ipynb"
+                description: "The objective of the competition was to predict the productivity of the palm oil harvest with the data provided by AGROPALMA. The data set included information on palm trees, their harvest dates, atmospheric data during the development of the plants and soil characteristics of the fields where the trees are located."
             },
             {
                 place: "silver",
@@ -252,10 +256,10 @@ export const language = {
             {
                 place: "silver",
                 title: "2nd place at Hackathon John Deere - Campus Party Brasil 10",
-                date: "(02/2017 - )",
+                date: "02/2017",
                 company: "John Deere - Brasil",
                 theme: "Topic: Connecting with the field (Free theme)",
-                description: "We develop the JDConnect solution that connects the entire enterprise through a middleware and provides information through a friendly chat to the client. Through this chat the user can talk directly with their machines (harvesters / tractors), which in our solution became bots."
+                description: "We develop the JDConnect solution that connects the entire enterprise through a middleware and provides information through a friendly chat to the client. Through this chat the user can talk directly with their machines, which in our solution became bots."
             },
             {
                 place: "gold",
@@ -394,6 +398,11 @@ export const language = {
             "Firebase",
             "MongoDB"
         ],
+        iconsData: [{
+            title: "Linkedin",
+            linkUrl: "https://www.linkedin.com/in/jp-dev/",
+            imageSource: "a"
+        }],
         myEmail: "jpmdik@gmail.com"
     }
 };
