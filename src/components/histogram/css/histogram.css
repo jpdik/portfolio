@@ -118,7 +118,8 @@
         height: 2.8rem;
         width: 2.8rem;
         top: 15%;
-        left: 43.5%;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
     .timeline-ico svg {
         font-size: 1em;

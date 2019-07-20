@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { Container, Row, Col, Carousel } from 'react-bootstrap'
-import ItemInfo from '../common/itemInfo/ItemInfo';
+import ItemInfo from '../../components/itemInfo/ItemInfo';
 
 import { faServer, faGlobeAmericas, faComments, faNewspaper } from '@fortawesome/free-solid-svg-icons'
 
 import './css/more.css'
+import Progressbar from '../../components/progressbar/Progressbar';
 
 class More extends Component {
 
@@ -24,10 +25,7 @@ class More extends Component {
         return Object.keys(itemList).map(key => {
             return (
                 <Col key={key} className="infoCard" lg="12">
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={itemList[key]} aria-valuemin="0" aria-valuemax="100" style={{ width: itemList[key] + '%' }}/>
-                        <div className="progress-value">{itemList[key]}%</div>
-                    </div>
+                    <Progressbar value={itemList[key]} />
                     <strong>{key}</strong>
                 </Col>
             )

@@ -16,21 +16,6 @@ class Contact extends Component {
         });
     }
 
-    renderBars(barList) {
-        let itemList = barList || [];
-        return Object.keys(itemList).map(key => {
-            return (
-                <Col key={key} className="infoCard" lg="12">
-                    <div className="progress">
-                        <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={itemList[key]} aria-valuemin="0" aria-valuemax="100" style={{ width: itemList[key] + '%' }}>{itemList[key]}%</div>
-                    </div>
-                    <strong>{key}</strong>
-                </Col>
-            )
-        });
-    }
-
-
 
     render() {
         const { contactTitle, contactDescription, yourNameText, yourEmailText, yourmessageText, sendText } = this.props.language.data;

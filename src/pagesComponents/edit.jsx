@@ -1,12 +1,12 @@
 import React, { Component } from 'react'
-import Navbar from '../components/Navbar/Navbar';
-import Intro from '../components/Intro/Intro';
-import About from '../components/About/About';
+import Navbar from '../sectionsComponents/Navbar/Navbar';
+import Intro from '../sectionsComponents/Intro/Intro';
+import About from '../sectionsComponents/About/About';
 import { language } from '../data/info';
-import Achievements from '../components/Achievements/Achievements';
-import More from '../components/More/More';
-import Contact from '../components/Contact/Contact';
-import Footer from '../components/Footer/Footer';
+import Achievements from '../sectionsComponents/Achievements/Achievements';
+import More from '../sectionsComponents/More/More';
+import Contact from '../sectionsComponents/Contact/Contact';
+import Footer from '../sectionsComponents/Footer/Footer';
 
 class HomePage extends Component {
     constructor(props){

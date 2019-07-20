@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap'
 
 import './css/achievements.css'
-import HistogramList from '../common/histogram/HistogramList';
-import HistogramItem from '../common/histogram/HistogramItem';
+import HistogramList from '../../components/histogram/HistogramList';
+import HistogramItem from '../../components/histogram/HistogramItem';
 
 import { faGraduationCap, faStar, faBriefcase, faBook } from '@fortawesome/free-solid-svg-icons'
 

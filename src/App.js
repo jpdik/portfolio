@@ -1,6 +1,8 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
+
 import './App.css';
-import HomePage from './HomePage/homepage';
+import HomePage from './pagesComponents/homepage';
 
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCheckSquare, faCoffee } from '@fortawesome/free-solid-svg-icons'
@@ -11,8 +13,9 @@ import './common/imports'
 library.add(fab, faCheckSquare, faCoffee)
 
 function App() {
-    return ( <
-        HomePage / >
+    return ( <>
+        <Route component={HomePage} />
+    </>
     );
 }
 

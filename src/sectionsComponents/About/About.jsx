@@ -5,8 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import './css/about.css'
-import Avatar from '../common/avatar/Avatar';
+import Avatar from '../../components/avatar/Avatar';
 import avatar from '../../img/avatar.jpg';
+import Progressbar from '../../components/progressbar/Progressbar';
 
 const reqSvgs = require.context('../../img/languages', true, /\.png$/)
 
@@ -39,10 +40,7 @@ class About extends Component {
 
 					<img className="language-logo" src={imageList[skill.imageSource]} alt="logo" />
 					<strong>{skill.name}</strong>
-					<div className="progress">
-						<div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow={skill.value} aria-valuemin="0" aria-valuemax="100" style={{ width: skill.value + '%' }} />
-						<div className="progress-value">{skill.value+"%"}</div>
-					</div>
+					<Progressbar value={skill.value}/>
 				</Col>
 			)
 		});
