@@ -1,21 +1,21 @@
 import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import './css/iteminfo.css'
+import { Service, ItemTitle, IconItem } from './ItemInfo.styles';
 
 export default props => (
-    <div className="service block-center text-white">
+    <Service className="block-center text-white">
 
         <span className="icon">
             <FontAwesomeIcon size={props.iconSize || '4x'} icon={props.icon} />
         </span>
 
-        <h3 className="itemInfo-title text-white">{props.title}</h3>
+        <ItemTitle className="text-white">{props.title}</ItemTitle>
 
-        <div className="service-content center">
+        <IconItem className="center">
 
             {props.children}
 
-        </div>
-    </div>
+        </IconItem>
+    </Service>
 )

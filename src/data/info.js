@@ -1,4 +1,4 @@
-export const language = {
+const languageData = {
     br: {
         portugueseText: "Português",
         englishText: "Inglês",
@@ -406,3 +406,5 @@ export const language = {
         myEmail: "jpmdik@gmail.com"
     }
 };
+
+export default languageData;

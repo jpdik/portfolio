@@ -52,25 +52,6 @@ li {
     margin: 0 auto;
 }
 
-.title-section {
-    font-size: 1.7rem;
-    line-height: 1.875;
-    margin-bottom: 1.5rem;
-    letter-spacing: .1rem;
-}
-
-.description-section {
-    font-size: 1.3rem;
-}
-
-.start-section {
-    padding-top: 6em;
-}
-
-.grey-section {
-    background: #ebebeb;
-}
-
 .text-white {
     color: white;
 }
@@ -83,13 +64,6 @@ li {
     color: #151515;
 }
 
-.dark-section {
-    background: #151515;
-}
-
-.black-section {
-    background: black;
-}
 
 ::-webkit-scrollbar {
     width: 10px;
