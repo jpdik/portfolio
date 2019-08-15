@@ -16,7 +16,7 @@ const imageList = reqSvgs.keys().reduce((images, path) => {
 class Skills extends Component {
 
     renderInfo() {
-        let infoList = this.props.language.data.infoData || [];
+        const infoList = this.props.language.data.infoData || [];
         return Object.keys(infoList).map(key => {
             return (
                 <Col key={key} className="infoCard" lg="6">
@@ -28,7 +28,7 @@ class Skills extends Component {
     }
 
     renderBars() {
-        let skillList = this.props.language.general.skillsData || [];
+        const skillList = this.props.language.general.skillsData || [];
         return skillList.map((skill, index) => {
             return (
                 <Col key={index} className="infoCard" lg="6">
@@ -42,7 +42,7 @@ class Skills extends Component {
     }
 
     render() {
-        let { skillsTitle } = this.props.language.data;
+        const { skillsTitle } = this.props.language.data;
 
         return (
             <Section title={skillsTitle}>

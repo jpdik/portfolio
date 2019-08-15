@@ -11,7 +11,7 @@ import NavLink from 'react-bootstrap/NavLink';
 
 class Header extends Component {
     render() {
-        let { aboutTitle, skillsTitle, qualificationsTitle, pExperienceTitle, awardsTitle, publicationsTitle, moreInfoTitle, contactTitle, portugueseText, englishText } = this.props.language.data;
+        let { aboutTitle, skillsTitle, projectsTitle, qualificationsTitle, pExperienceTitle, awardsTitle, publicationsTitle, moreInfoTitle, contactTitle, portugueseText, englishText } = this.props.language.data;
 
         let { actionLanguage } = this.props;
 
@@ -22,6 +22,7 @@ class Header extends Component {
                 }>
                     <NavLink href={'#'+aboutTitle}>{aboutTitle}</NavLink>
                     <NavLink href={'#'+skillsTitle}>{skillsTitle}</NavLink>
+                    <NavLink href={'#'+projectsTitle}>{projectsTitle}</NavLink>
                     <NavLink href={'#'+qualificationsTitle}>{qualificationsTitle}</NavLink>
                     <NavLink href={'#'+pExperienceTitle}>{pExperienceTitle}</NavLink>
                     <NavLink href={'#'+awardsTitle}>{awardsTitle}</NavLink>

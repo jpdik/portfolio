@@ -37,7 +37,8 @@
 .timeline-ico {
     height: 4.8rem;
     width: 4.8rem;
-    background: #313131;
+    background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #b9b9b9 4%, #777777 12.25%, #2d2d2d 31.25%, #000000 50%) top right/200% 250%;
+    animation: colorChange 3s infinite alternate;
     border-radius: 50%;
     text-align: center;
     color: #FFFFFF;
@@ -80,15 +81,24 @@
 }
 
 .gold {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%) !important;
+    background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #FEDB37 4%, #fde431 12.25%, #a3a717 31.25%, #afa424 50%) top right/200% 250%;
+    animation: colorChange 3s infinite alternate;
+}
+
+@keyframes colorChange {
+    to {
+      background-position: left;
+    }
 }
 
 .silver {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #eaeaea 0%, #ffffff 8%, #8f9ba4 30%, #8d9aa4 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffff 8%, #c6d0d6 25%, #686a6f 62.5%, #7a766f 100%) !important;
+    background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #C0C0C0 4%, #B1B1B1 12.25%, #A2A2A2 31.25%, #CFCFCF 50%) top right/200% 250%;
+    animation: colorChange 3s infinite alternate;
 }
 
 .bronze {
-    background: radial-gradient(ellipse farthest-corner at right bottom, #dedede 0%, #ffffff 8%, #bd7937 30%, #bf6d20 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #ffffff 0%, #ffffff 8%, #d8873a 25%, #e5862c 62.5%, #ffffff 100%) !important;
+    background: radial-gradient(farthest-corner at top, #FFFFFF 0%, #CD7F32 4%, #BE7023 12.25%, #AF6114 31.25%, #DC8E41 50%) top right/200% 250%;
+    animation: colorChange 3s infinite alternate;
 }
 
 .content-minor {

@@ -14,7 +14,7 @@ const languageData = {
         infoTitle: "Informações",
         infoData: {
             "Nome": "João Paulo de Melo",
-            "Data de Nascimento": "11/09/1995",
+            "Idade": `${new Date('2019', '09' - 1, '11', '00', '00', '00') <= new Date() ? new Date().getFullYear()-1995 : new Date().getFullYear()-1996} anos`,
             "E-mail": "jpmdik@gmail.com",
             "Cidade, Estado": "Barbacena, MG"
         },
@@ -169,7 +169,7 @@ const languageData = {
         infoTitle: "Info",
         infoData: {
             name: "João Paulo de Melo",
-            birthdate: "11/09/1995",
+            age: `${new Date('2019', '09' - 1, '11', '00', '00', '00') <= new Date() ? new Date().getFullYear()-1995 : new Date().getFullYear()-1996} years old`,
             email: "jpmdik@gmail.com",
             cityState: "Barbacena, MG"
         },
@@ -397,6 +397,28 @@ const languageData = {
             "MySQL",
             "Firebase",
             "MongoDB"
+        ],
+        projectsReference: [
+            {
+                name: 'DirShared',
+                imageSource: "dirshared.png",
+                link: "https://www.dirshared.com.br"
+            },
+            {
+                name: 'CoWeb',
+                imageSource: "coweb.png",
+                link: "https://coweb.jpmdik.com.br/"
+            },
+            {
+                name: 'AWS-script-automation',
+                imageSource: "aws-automation.png",
+                link: "https://github.com/jpdik/aws-script-automation"
+            },
+            {
+                name: 'UzaApp',
+                imageSource: "uzaapp.png",
+                link: "https://www.uzaapp.com.br"
+            }
         ],
         iconsData: [{
             title: "Linkedin",
